@@ -1,0 +1,16 @@
+name = "ChainRulesDeclarationHelpers"
+uuid = "eeaa3d8b-e16a-5a7e-b044-1a854a548346"
+version = "0.1.0"
+
+[deps]
+ChainRulesCore = "d360d2e6-b24c-11e9-a2a3-2a2ae2dbcce4"
+
+[compat]
+ChainRulesCore = "1.0.0"
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
