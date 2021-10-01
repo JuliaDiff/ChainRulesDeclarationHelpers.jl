@@ -2,7 +2,7 @@ using Test
 using ChainRulesDeclarationHelpers
 using ChainRulesCore
 using ChainRulesTestUtils
-using LinearAlgebra
+using Zygote
 
 
 @testset "rrule_from_frule" begin
@@ -22,5 +22,7 @@ using LinearAlgebra
     
     x = rand(3)
     @test test_frule(f, x)
+
+    @rrule_from_frule f(x::AbstractArray{<:Real})
     @test test_rrule(Zygote.ZygoteRuleConfig(), f, x; check_inferred=false)
 end
