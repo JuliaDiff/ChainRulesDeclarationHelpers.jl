@@ -20,7 +20,7 @@ end
 function rrule_from_frule_expr(__source__, f, arg)
     f_instance_name  = gensym(Symbol(:instance_, Symbol(f)))
     return quote
-        function ChainRulesCore.rrule(config::RuleConfig{>:HasReverseMode}, $f_instance_name::Core.Typeof($f), $arg)
+        function ChainRulesCore.rrule(config::RuleConfig{>:HasReverseMode}, $f_instance_name::Core.Typeof($(esc(f))), $arg)
             $(__source__)
             pushforward(Δfarg...) = frule(Δfarg, $f_instance_name, $arg)[2]
             _, back = rrule_via_ad(config, pushforward, $f_instance_name, $arg)

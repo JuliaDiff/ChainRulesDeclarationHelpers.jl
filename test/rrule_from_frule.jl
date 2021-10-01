@@ -21,8 +21,8 @@ using Zygote
     end
     
     x = rand(3)
-    @test test_frule(f, x)
+    test_frule(f, x)
 
     @rrule_from_frule f(x::AbstractArray{<:Real})
-    @test test_rrule(Zygote.ZygoteRuleConfig(), f, x; check_inferred=false)
+    test_rrule(Zygote.ZygoteRuleConfig(), f, x; check_inferred=false)
 end
