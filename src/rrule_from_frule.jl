@@ -8,6 +8,10 @@ The pushforward at the point is a linear function which has the same derivative 
 the primal at that point. So asking for its derivative gives you the derivative of 
 the primal. Moreover, asking for its rrule effectively amounts to transposing the 
 pushforward implied by the frule.
+
+Further Reading
+[1] Roy Frostig, Matthew J. Johnson, Dougal Maclaurin, Adam Paszke, and Alexey Radul.
+    Decomposing reverse-mode automatic differentiation. LAFI 2021
 """
 macro rrule_from_frule(signature_expression)
     @assert Meta.isexpr(signature_expression, :call)
