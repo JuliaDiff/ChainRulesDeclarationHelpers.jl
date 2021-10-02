@@ -1,10 +1,3 @@
-using Test
-using ChainRulesDeclarationHelpers
-using ChainRulesCore
-using ChainRulesTestUtils
-using Zygote
-
-
 @testset "rrule_from_frule" begin
     function f(x)
         a = sin.(x)
