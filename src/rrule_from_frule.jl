@@ -4,6 +4,10 @@ using ChainRulesCore
     @rrule_from_frule(signature_expression)
 
 A helper to define an rrule by calling back into AD on an already defined frule.
+The pushforward at the point is a linear function which has the same derivative as
+the primal at that point. So asking for its derivative gives you the derivative of 
+the primal. Moreover, asking for its rrule effectively amounts to transposing the 
+pushforward implied by the frule.
 """
 macro rrule_from_frule(signature_expression)
     @assert Meta.isexpr(signature_expression, :call)
