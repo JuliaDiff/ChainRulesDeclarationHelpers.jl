@@ -3,13 +3,13 @@
 # ChainRulesDeclarationHelpers
 
 [![Build Status](https://github.com/JuliaDiff/ChainRulesDeclarationHelpers.jl/workflows/CI/badge.svg)](https://github.com/JuliaDiff/ChainRulesDeclarationHelpers.jl/actions?query=workflow:CI)
-[![Coverage](https://codecov.io/gh/JuliaDiff/ChainRulesDeclarationHelpers.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/JuliaDiff/ChainRulesDeclarationHelpers.jl)
+[![Coverage](https://codecov.io/gh/JuliaDiff/ChainRulesDeclarationHelpers.jl/branch/main/graph/badge.svg)](https://codecov.io/gh/JuliaDiff/ChainRulesDeclarationHelpers.jl)
 [![Code Style: Blue](https://img.shields.io/badge/code%20style-blue-4495d1.svg)](https://github.com/invenia/BlueStyle)
 [![ColPrac: Contributor's Guide on Collaborative Practices for Community Packages](https://img.shields.io/badge/ColPrac-Contributor's%20Guide-blueviolet)](https://github.com/SciML/ColPrac)
 [![DOI](https://zenodo.org/badge/199721843.svg)](https://zenodo.org/badge/latestdoi/199721843)
 
 **Docs:**
-[![](https://img.shields.io/badge/docs-master-blue.svg)](https://juliadiff.org/ChainRulesDeclarationHelpers.jl/dev)
+[![](https://img.shields.io/badge/docs-dev-blue.svg)](https://juliadiff.org/ChainRulesDeclarationHelpers.jl/dev)
 [![](https://img.shields.io/badge/docs-stable-blue.svg)](https://juliadiff.org/ChainRulesDeclarationHelpers.jl/stable)
 
 The ChainRulesDeclarationHelpers package provides a suite of functionality for defining [ChainRulesCore.jl](https://github.com/JuliaDiff/ChainRulesCore.jl) rules.
