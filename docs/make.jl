@@ -1,7 +1,6 @@
 using ChainRulesDeclarationHelpers
 using Documenter
 using DocThemeIndigo
-using Markdown
 
 indigo = DocThemeIndigo.install(ChainRulesDeclarationHelpers)
 
