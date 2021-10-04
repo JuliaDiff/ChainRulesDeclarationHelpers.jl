@@ -22,6 +22,7 @@ makedocs(
 )
 
 deploydocs(
+    devbranch="main",
     repo = "github.com/JuliaDiff/ChainRulesDeclarationHelpers.jl.git",
     push_preview=true,
 )
